@@ -1,11 +1,18 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url(fonts/CenturyGothic.ttf);
+}
+
 body {
-    font-family: "Lora";
+    font-family: "Century Gothic";
     margin: 0;
+    color: navy;
+    background-color: rgb(233, 243, 253);
 }
 
 header {
-    padding: 10px;
-    background-color: grey;
+    padding: 20px;
+    background-color: rgb(219, 236, 252);
 }
 
 header ul {
@@ -14,15 +21,17 @@ header ul {
     list-style: none;
 }
 
-#seperator {
+#header-seperator {
     display: flex;
     justify-content: space-between;
 }
 
 #page-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#page-logo ul {
+    text-align: center;
 }
 
 #page-logo img {
@@ -32,14 +41,9 @@ header ul {
     border-radius: 50%;
 }
 
-header p {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
 header i {
     font-size: 16px;
+    font-weight: 400;
 }
 
 header nav ul {
@@ -48,14 +52,64 @@ header nav ul {
 }
 
 header nav a {
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 20px;
     padding: 5px;
-    color: black;
+    color: rgb(243, 9, 204);
 }
 
-header nav a:hover {
-    color: white;
-    background-color: rgb(54, 54, 54);
-    border-radius: 5px;
+a:hover {
+    text-decoration: none;
+    color: navy;
+}
+
+footer  {
+    padding-top: 40px;
+    text-align: end;
+    background-color: rgb(219, 236, 252);
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer-seperator {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#footer-seperator a {
+    color: navy;
+}
+
+#footer-seperator a {
+    text-decoration: none;
+}
+    
+#page-links a {
+    padding: 5px 10px;
+    color: rgb(243, 9, 204);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#page-links a:hover {
+    color: navy;
     text-decoration: none;
 }
