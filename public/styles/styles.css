@@ -22,14 +22,6 @@ p {
     color: navy;
     text-shadow: 1px 1px 4px gray;
 }
-/* 
-#definition {
-    margin-top: 5px;
-}
-
-#example {
-    color: rgb(100, 100, 100);
-} */
 
 main div {
     display: flex;
