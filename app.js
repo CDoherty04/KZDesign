@@ -16,9 +16,27 @@ app.get("/cart", function (req, res) {
     res.render("cart")
 })
 
+app.get("/confirm", function (req, res) {
+    res.render("confirm")
+})
+
 app.get("/contact", function (req, res) {
     res.render("contact")
 })
+
+app.post("/contact", function (req, res) {
+    const pathName = path.join(__dirname, "contact.json")
+    const contact = req.body
+
+    const fileData = fs.readFileSync(pathName)
+    const storedContacts = JSON.parse(fileData)
+    storedContacts.push(contact)
+
+    fs.writeFileSync(pathName, JSON.stringify(storedContacts))
+
+    res.redirect("/confirm")
+})
+
 
 app.get("/gallery", function (req, res) {
     res.render("gallery")
