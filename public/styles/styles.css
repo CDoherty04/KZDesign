@@ -53,20 +53,42 @@ p {
 
 #story {
     width: 50%;
+    margin: auto;
 }
 
 #stock-container {
-    width: 20rem;
+    width: 100%;
 }
 
-#blurb li p {
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
-#blurb li img {
+#stock-container img {
     border-radius: 10px;
     width: 100%;
     margin: 0;
     object-fit: cover;
+}
+
+#story p {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 60rem) {
+    #blurb {
+        display: block;
+    }
+
+    #story {
+        margin: 2rem auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 30rem) {
+    #featured {
+        display: block;
+    }
+
+    #story p{
+        font-size: 1rem;
+    }
 }
