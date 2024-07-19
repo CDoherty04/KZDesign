@@ -1,0 +1,51 @@
+main {
+    height: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+form {
+    width: 70%;
+    max-width: 40rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    background-color: rgb(219, 236, 252);
+    border: solid 1px rgb(243, 9, 204);
+}
+
+label {
+    display: block;
+    margin: 1rem 0 .25rem 0;
+}
+
+input {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(233, 243, 253);
+    border: solid 1px rgb(243, 9, 204);
+}
+
+textarea {
+    width: 70%;
+    background-color: rgb(233, 243, 253);
+    border: solid 1px rgb(243, 9, 204);
+}
+
+button {
+    font: inherit;
+    margin: 1rem;
+    padding: .25rem .5rem;
+    border-radius: 2px;
+    border: none;
+    background-color: ghostwhite;
+}
+
+@media (max-width: 30rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

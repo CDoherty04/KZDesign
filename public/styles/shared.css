@@ -148,6 +148,10 @@ a:hover {
     }
 }
 
+main {
+    height: 50vh;
+}
+
 h1 {
     color: navy;
     text-shadow: .1rem .1rem .2rem gray;
@@ -213,6 +217,10 @@ footer i {
 }
 
 @media (max-width: 30rem) {
+    #title {
+        font-size: 2.5rem;
+    }
+    
     #footer-logo {
         width: 5rem;
         height: 5rem;
@@ -227,6 +235,12 @@ footer i {
     }
 
     footer i {
-        font-size: .75rem;
-    }    
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 25rem) {
+    #footer-logo {
+        display: none;
+    }
 }

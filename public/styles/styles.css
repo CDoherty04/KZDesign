@@ -1,6 +1,7 @@
 main {
     text-align: center;
     margin: 5rem;
+    height: 100%;
 }
 
 #title {
@@ -48,11 +49,12 @@ p {
 }
 
 #blurb li {
+    padding: .5rem;
     list-style: none;
 }
 
 #story {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
