@@ -23,8 +23,10 @@ label {
 
 input {
     width: 50%;
+    padding: .5rem;
     display: block;
     margin: 0 auto;
+    color: navy;
     background-color: rgb(233, 243, 253);
     border: solid 1px rgb(243, 9, 204);
 }
@@ -44,8 +46,13 @@ button {
     background-color: ghostwhite;
 }
 
+button:hover {
+    background-color: rgb(242, 242, 255);
+    cursor: pointer;
+}
+
 @media (max-width: 30rem) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rgb(225, 225, 255)
     }
 }

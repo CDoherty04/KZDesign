@@ -12,12 +12,16 @@ app.use(express.static("public")) // "Publicizes" styles and scripts
 app.use(express.urlencoded({ extended: false }))
 
 // Renders through ejs
-app.get("/cart", function (req, res) {
-    res.render("cart")
+app.get("/", function (req, res) {
+    res.render("index")
 })
 
-app.get("/confirm", function (req, res) {
-    res.render("confirm")
+app.get("/about", function (req, res) {
+    res.render("about")
+})
+
+app.get("/gallery", function (req, res) {
+    res.render("gallery")
 })
 
 app.get("/contact", function (req, res) {
@@ -37,13 +41,17 @@ app.post("/contact", function (req, res) {
     res.redirect("/confirm")
 })
 
-
-app.get("/gallery", function (req, res) {
-    res.render("gallery")
+app.get("/confirm", function (req, res) {
+    res.render("confirm")
 })
 
-app.get("/", function (req, res) {
-    res.render("index")
+app.get("/shop", function (req, res) {
+    res.render("shop")
 })
+
+app.get("/cart", function (req, res) {
+    res.render("cart")
+})
+
 
 app.listen(3000)
