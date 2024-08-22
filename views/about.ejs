@@ -3,13 +3,28 @@
 
 <head>
   <%- include("includes/head") %>
+  <link rel="stylesheet" href="styles/about.css">
 </head>
 
 <body>
   <%- include("includes/header") %>
   <%- include("includes/side-drawer") %>
   <main>
-    <a href="/">This page is unfinished</a>
+    <div id="about">
+      <img id="portrait" src="/icons/me.jpg" alt="Portrait of Kristen Doherty">
+      <div id="text">
+        <h2>Kristen Doherty</h2>
+        <h3>Interior Designer, kzddesigngroup</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, hic mollitia reiciendis rerum eius quasi veniam aut, laborum quos sunt aliquid. Nam explicabo illo quis necessitatibus nesciunt odio maxime quibusdam?</p>
+        <ul id="handles">
+          <li>
+            <a href="https://instagram.com">
+              <img src="/icons/instagram-logo.jpg" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
   <%- include("includes/footer") %>
 </body>

@@ -1,6 +1,5 @@
 const express = require("express")
 const path = require("path")
-const fs = require("fs")
 
 const baseRoutes = require("./routes/base-routes")
 const dynamicRoutes = require("./routes/dynamic-routes")
@@ -21,4 +20,4 @@ app.use(dynamicRoutes)
 app.use(contactRoutes)
 app.use(cartRoutes)
 
-app.listen(3000)
+app.listen(3001)

@@ -1,3 +1,6 @@
+const fs = require("fs")
+const path = require("path")
+
 function getContact(req, res) {
     res.render("contact")
 }

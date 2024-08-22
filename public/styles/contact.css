@@ -3,7 +3,7 @@ main {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
 }
 
 form {
@@ -13,7 +13,7 @@ form {
     margin: 2rem auto;
     border-radius: 5px;
     background-color: rgb(219, 236, 252);
-    border: solid 1px rgb(243, 9, 204);
+    border: solid 1px navy;
 }
 
 label {
@@ -28,13 +28,13 @@ input {
     margin: 0 auto;
     color: navy;
     background-color: rgb(233, 243, 253);
-    border: solid 1px rgb(243, 9, 204);
+    border: solid 1px navy;
 }
 
 textarea {
     width: 70%;
     background-color: rgb(233, 243, 253);
-    border: solid 1px rgb(243, 9, 204);
+    border: solid 1px navy;
 }
 
 button {
@@ -49,10 +49,4 @@ button {
 button:hover {
     background-color: rgb(242, 242, 255);
     cursor: pointer;
-}
-
-@media (max-width: 30rem) {
-    h1 {
-        font-size: 2.5rgb(225, 225, 255)
-    }
 }
