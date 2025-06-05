@@ -17,19 +17,19 @@ const Home = () => {
       id: 1,
       title: 'Modern Farmhouse Living Room',
       description: 'A perfect blend of rustic charm and contemporary comfort',
-      image: 'https://raw.githubusercontent.com/CDoherty04/KZDesign/refs/heads/main/public/icons/me.jpg?token=GHSAT0AAAAAADE7ETEZHTMWKFPABHCEWO5A2CA3RKA',
+      image: './me.jpg',
     },
     {
       id: 2,
       title: 'Coastal Kitchen Renovation',
       description: 'Light-filled space with natural materials and ocean-inspired accents',
-      image: 'https://raw.githubusercontent.com/CDoherty04/KZDesign/refs/heads/main/public/icons/me.jpg?token=GHSAT0AAAAAADE7ETEZHTMWKFPABHCEWO5A2CA3RKA',
+      image: './me.jpg',
     },
     {
       id: 3,
       title: 'Mountain Retreat Master Suite',
       description: 'Serene bedroom sanctuary with panoramic views',
-      image: 'https://raw.githubusercontent.com/CDoherty04/KZDesign/refs/heads/main/public/icons/me.jpg?token=GHSAT0AAAAAADE7ETEZHTMWKFPABHCEWO5A2CA3RKA',
+      image: './me.jpg',
     },
   ]
 
@@ -50,7 +50,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          bgImage="url('https://raw.githubusercontent.com/CDoherty04/KZDesign/refs/heads/main/public/icons/me.jpg?token=GHSAT0AAAAAADE7ETEZHTMWKFPABHCEWO5A2CA3RKA')"
+          bgImage="url('./me.jpg')"
           bgSize="cover"
           bgPosition="center"
           opacity={0.1}
