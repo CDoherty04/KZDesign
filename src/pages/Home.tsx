@@ -17,19 +17,19 @@ const Home = () => {
       id: 1,
       title: 'Modern Farmhouse Living Room',
       description: 'A perfect blend of rustic charm and contemporary comfort',
-      image: './me.jpg',
+      image: '/KZDesign/me.jpg',
     },
     {
       id: 2,
       title: 'Coastal Kitchen Renovation',
       description: 'Light-filled space with natural materials and ocean-inspired accents',
-      image: './me.jpg',
+      image: '/KZDesign/me.jpg',
     },
     {
       id: 3,
       title: 'Mountain Retreat Master Suite',
       description: 'Serene bedroom sanctuary with panoramic views',
-      image: './me.jpg',
+      image: '/KZDesign/me.jpg',
     },
   ]
 
@@ -50,7 +50,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          bgImage="url('./me.jpg')"
+          bgImage="url('/KZDesign/me.jpg')"
           bgSize="cover"
           bgPosition="center"
           opacity={0.1}
