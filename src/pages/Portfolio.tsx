@@ -21,42 +21,42 @@ const Portfolio = () => {
       title: 'Modern Living Room',
       category: 'living',
       description: 'Contemporary design with natural elements',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room1.jpg',
     },
     {
       id: 2,
       title: 'Luxury Kitchen',
       category: 'kitchen',
       description: 'Elegant and functional kitchen design',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room2.jpg',
     },
     {
       id: 3,
       title: 'Minimalist Bedroom',
       category: 'bedroom',
       description: 'Calm and peaceful retreat',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room3.jpg',
     },
     {
       id: 4,
       title: 'Contemporary Bathroom',
       category: 'bathroom',
       description: 'Spa-like atmosphere with modern fixtures',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room4.jpg',
     },
     {
       id: 5,
       title: 'Open Concept Office',
       category: 'office',
       description: 'Productive and inspiring workspace',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room5.png',
     },
     {
       id: 6,
       title: 'Cozy Dining Room',
       category: 'dining',
       description: 'Warm and inviting dining space',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/rooms/room6.png',
     },
   ]
 
@@ -67,7 +67,7 @@ const Portfolio = () => {
   return (
     <Container maxW="container.xl" py={16}>
       <VStack spacing={12}>
-        <Heading as="h1" size="2xl" textAlign="center">
+        <Heading as="h1" size="2xl" textAlign="center" color="brand.950">
           My Portfolio
         </Heading>
         
@@ -76,6 +76,7 @@ const Portfolio = () => {
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             maxW="200px"
+            color="brand.950"
             bg={useColorModeValue('white', 'gray.800')}
           >
             <option value="all">All Projects</option>
@@ -98,6 +99,7 @@ const Portfolio = () => {
               boxShadow="md"
               transition="transform 0.2s"
               _hover={{ transform: 'scale(1.02)' }}
+              color="brand.950"
             >
               <Image
                 src={project.image}
@@ -110,7 +112,7 @@ const Portfolio = () => {
                 <Heading as="h3" size="md">
                   {project.title}
                 </Heading>
-                <Text color={useColorModeValue('gray.600', 'gray.300')}>
+                <Text color="brand.900">
                   {project.description}
                 </Text>
               </VStack>

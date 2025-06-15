@@ -1,4 +1,4 @@
-import { Box, Flex, Link, Button, IconButton, useDisclosure, VStack, Container } from '@chakra-ui/react'
+import { Box, Flex, Link, Button, IconButton, useDisclosure, VStack, Container, Image } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { useState, useEffect } from 'react'
@@ -24,24 +24,32 @@ const Navbar = () => {
       transition="all 0.3s"
       boxShadow={isScrolled ? "sm" : "none"}
     >
-      <Container maxW="container.xl" px={{ base: 4, md: 6, lg: 8 }}>
+      <Container maxW="container.xl">
         <Flex
           h={16}
           alignItems="center"
           justifyContent="space-between"
           w="full"
         >
-          <Link
-            as={RouterLink}
-            to="/"
-            fontSize={{ base: "xl", md: "2xl" }}
-            fontWeight="bold"
-            color="brand.700"
-            fontFamily="heading"
-            _hover={{ textDecoration: "none" }}
-          >
-            Kristen Doherty
-          </Link>
+          <Flex alignItems="center" gap={4}>
+            <Image
+              src="/KZDesign/logo.png"
+              alt="Kristen Doherty Design Logo"
+              h="40px"
+              w="auto"
+            />
+            <Link
+              as={RouterLink}
+              to="/"
+              fontSize={{ base: "xl", md: "2xl" }}
+              fontWeight="bold"
+              color="brand.1000"
+              fontFamily="heading"
+              _hover={{ textDecoration: "none" }}
+            >
+              KZD Design Group
+            </Link>
+          </Flex>
 
           {/* Desktop Navigation */}
           <Flex
@@ -52,8 +60,8 @@ const Navbar = () => {
             <Link
               as={RouterLink}
               to="/"
-              color="brand.600"
-              _hover={{ color: "brand.800" }}
+              color="brand.950"
+              _hover={{ color: "accent.500" }}
               fontSize="lg"
             >
               Home
@@ -61,8 +69,8 @@ const Navbar = () => {
             <Link
               as={RouterLink}
               to="/portfolio"
-              color="brand.600"
-              _hover={{ color: "brand.800" }}
+              color="brand.950"
+              _hover={{ color: "accent.500" }}
               fontSize="lg"
             >
               Portfolio
@@ -70,9 +78,9 @@ const Navbar = () => {
             <Button
               as={RouterLink}
               to="/contact"
-              bg="brand.500"
+              bg="accent.500"
               color="white"
-              _hover={{ bg: "brand.600" }}
+              _hover={{ bg: "accent.600" }}
               size="md"
             >
               Contact
@@ -86,7 +94,7 @@ const Navbar = () => {
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             variant="ghost"
             aria-label="Toggle Navigation"
-            color="brand.700"
+            color="brand.950"
           />
         </Flex>
       </Container>
@@ -105,8 +113,8 @@ const Navbar = () => {
               <Link
                 as={RouterLink}
                 to="/"
-                color="brand.600"
-                _hover={{ color: "brand.800" }}
+                color="brand.950"
+                _hover={{ color: "accent.500" }}
                 fontSize="lg"
                 onClick={onToggle}
               >
@@ -115,8 +123,8 @@ const Navbar = () => {
               <Link
                 as={RouterLink}
                 to="/portfolio"
-                color="brand.600"
-                _hover={{ color: "brand.800" }}
+                color="brand.950"
+                _hover={{ color: "accent.500" }}
                 fontSize="lg"
                 onClick={onToggle}
               >
@@ -125,9 +133,9 @@ const Navbar = () => {
               <Button
                 as={RouterLink}
                 to="/contact"
-                bg="brand.500"
+                bg="accent.500"
                 color="white"
-                _hover={{ bg: "brand.600" }}
+                _hover={{ bg: "accent.600" }}
                 size="md"
                 onClick={onToggle}
               >

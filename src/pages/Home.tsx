@@ -17,19 +17,19 @@ const Home = () => {
       id: 1,
       title: 'Modern Farmhouse Living Room',
       description: 'A perfect blend of rustic charm and contemporary comfort',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/frontpage/front1.jpg',
     },
     {
       id: 2,
       title: 'Coastal Kitchen Renovation',
       description: 'Light-filled space with natural materials and ocean-inspired accents',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/frontpage/front2.jpg',
     },
     {
       id: 3,
       title: 'Mountain Retreat Master Suite',
       description: 'Serene bedroom sanctuary with panoramic views',
-      image: '/KZDesign/me.jpg',
+      image: '/KZDesign/frontpage/front3.jpg',
     },
   ]
 
@@ -50,7 +50,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          bgImage="url('/KZDesign/me.jpg')"
+          bgImage="url('/KZDesign/rooms/room5.png')"
           bgSize="cover"
           bgPosition="center"
           opacity={0.1}
@@ -61,7 +61,7 @@ const Home = () => {
               as="h1"
               size={{ base: "xl", md: "2xl", lg: "3xl" }}
               fontWeight="bold"
-              color="brand.700"
+              color="brand.950"
               fontFamily="heading"
               lineHeight="1.2"
             >
@@ -69,7 +69,7 @@ const Home = () => {
             </Heading>
             <Text
               fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-              color="brand.600"
+              color="brand.900"
               maxW="3xl"
               fontFamily="body"
               px={4}
@@ -82,9 +82,9 @@ const Home = () => {
               as={RouterLink}
               to="/contact"
               size={{ base: "md", md: "lg" }}
-              bg="brand.500"
+              bg="accent.500"
               color="white"
-              _hover={{ bg: "brand.600" }}
+              _hover={{ bg: "accent.600" }}
               mt={4}
             >
               Start Your Project
@@ -94,14 +94,14 @@ const Home = () => {
       </Box>
 
       {/* Featured Projects */}
-      <Box w="full" bg="white" py={{ base: 12, md: 20 }}>
+      <Box bg="brand.50" py={{ base: 16, md: 24 }}>
         <Container maxW="container.xl" px={{ base: 4, md: 6, lg: 8 }}>
           <VStack spacing={{ base: 8, md: 12 }} w="full">
             <Heading
               as="h2"
               size={{ base: "lg", md: "xl", lg: "2xl" }}
               textAlign="center"
-              color="brand.700"
+              color="brand.950"
               fontFamily="heading"
             >
               Featured Projects
@@ -130,17 +130,17 @@ const Home = () => {
                       objectFit="cover"
                     />
                   </AspectRatio>
-                  <VStack p={{ base: 4, md: 6, lg: 8 }} align="start" spacing={3}>
+                  <VStack p={6} align="start" spacing={3}>
                     <Heading
                       as="h3"
                       size={{ base: "sm", md: "md", lg: "lg" }}
-                      color="brand.700"
+                      color="brand.950"
                       fontFamily="heading"
                     >
                       {project.title}
                     </Heading>
                     <Text
-                      color="brand.600"
+                      color="brand.900"
                       fontFamily="body"
                       fontSize={{ base: "sm", md: "md", lg: "lg" }}
                     >
@@ -154,9 +154,9 @@ const Home = () => {
               as={RouterLink}
               to="/portfolio"
               variant="outline"
-              color="brand.500"
-              borderColor="brand.500"
-              _hover={{ bg: "brand.50" }}
+              color="accent.500"
+              borderColor="accent.500"
+              _hover={{ bg: "accent.50" }}
               size={{ base: "md", md: "lg" }}
             >
               View All Projects
