@@ -13,7 +13,7 @@ import {
   Icon,
   Stack,
 } from '@chakra-ui/react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaPhone, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -101,7 +101,7 @@ const Contact = () => {
                   <VStack align="start" spacing={0}>
                     <Text fontWeight="medium" color="brand.950">Phone</Text>
                     <Text color="brand.900">
-                      (555) 123-4567
+                      (913) 677-4800
                     </Text>
                   </VStack>
                 </HStack>
@@ -111,19 +111,7 @@ const Contact = () => {
                   <VStack align="start" spacing={0}>
                     <Text fontWeight="medium" color="brand.950">Email</Text>
                     <Text color="brand.900">
-                      kristen@dohertydesign.com
-                    </Text>
-                  </VStack>
-                </HStack>
-
-                <HStack spacing={4}>
-                  <Icon as={FaMapMarkerAlt} color="accent.500" boxSize={5} />
-                  <VStack align="start" spacing={0}>
-                    <Text fontWeight="medium" color="brand.950">Studio</Text>
-                    <Text color="brand.900">
-                      123 Design Street
-                      <br />
-                      San Francisco, CA 94105
+                      kzddesigngroup@gmail.com
                     </Text>
                   </VStack>
                 </HStack>
@@ -134,11 +122,11 @@ const Contact = () => {
                   Business Hours
                 </Heading>
                 <Text color="brand.900">
-                  Monday - Friday: 9:00 AM - 6:00 PM
+                  Monday - Friday: 9:00 AM - 5:00 PM
                   <br />
-                  Saturday: By appointment
+                  Saturday - Sunday: Closed
                   <br />
-                  Sunday: Closed
+                  Call to schedule an appointment
                 </Text>
               </VStack>
             </VStack>
