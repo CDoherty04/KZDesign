@@ -14,32 +14,32 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Rooms',
-      image: '/KZDesign/rooms/room1.jpg',
+      image: '/KZDesign/galleryCovers/rooms1.png',
     },
     {
       id: 2,
-      title: 'Kitchens',
-      image: '/KZDesign/rooms/room2.jpg',
+      title: 'Before & After',
+      image: '/KZDesign/galleryCovers/ba2.png',
     },
     {
       id: 3,
-      title: 'Minimalist Bedroom',
-      image: '/KZDesign/rooms/room3.jpg',
+      title: 'Mood Boards',
+      image: '/KZDesign/galleryCovers/mood3.png',
     },
     {
       id: 4,
-      title: 'Contemporary Bathroom',
-      image: '/KZDesign/rooms/room4.jpg',
+      title: 'Bathrooms',
+      image: '/KZDesign/galleryCovers/bath4.jpg',
     },
     {
       id: 5,
-      title: 'Open Concept Office',
-      image: '/KZDesign/rooms/room5.png',
+      title: 'Light Fixtures',
+      image: '/KZDesign/galleryCovers/lights5.jpg',
     },
     {
       id: 6,
-      title: 'Cozy Dining Room',
-      image: '/KZDesign/rooms/room6.png',
+      title: 'Seasonal',
+      image: '/KZDesign/galleryCovers/seasonal6.jpg',
     },
   ]
 
@@ -67,7 +67,6 @@ const Portfolio = () => {
                 alt={project.title}
                 height="300px"
                 width="100%"
-                objectFit="cover"
               />
               <VStack p={6} align="center" spacing={3}>
                 <Heading as="h2" size="lg">
