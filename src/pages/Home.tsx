@@ -17,13 +17,13 @@ const Home = () => {
       id: 1,
       title: 'Modern Bedroom Suite',
       description: 'A teenager\'s dream bedroom with a crisp modern feel',
-      image: '/KZDesign/frontpage/front2.jpg',
+      image: '/KZDesign/frontpage/front1.jpg',
     },
     {
       id: 2,
       title: 'Coastal Bedroom',
       description: 'Light-filled space with natural materials and ocean-inspired accents',
-      image: '/KZDesign/frontpage/front1.jpg',
+      image: '/KZDesign/frontpage/front2.jpg',
     },
     {
       id: 3,
