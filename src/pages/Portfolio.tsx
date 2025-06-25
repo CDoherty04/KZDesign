@@ -8,40 +8,53 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 
 const Portfolio = () => {
+  const navigate = useNavigate()
+  
   const projects = [
     {
       id: 1,
       title: 'Rooms',
       image: '/KZDesign/galleryCovers/rooms1.png',
+      path: '/rooms',
     },
     {
       id: 2,
       title: 'Before & After',
-      image: '/KZDesign/galleryCovers/ba2.png',
+      image: '/KZDesign/galleryCovers/ba2.jpg',
+      path: '/before-after',
     },
     {
       id: 3,
       title: 'Mood Boards',
       image: '/KZDesign/galleryCovers/mood3.png',
+      path: '/mood-boards',
     },
     {
       id: 4,
-      title: 'Bathrooms',
-      image: '/KZDesign/galleryCovers/bath4.jpg',
+      title: 'Kitchen & Bathroom',
+      image: '/KZDesign/galleryCovers/kitchenBath4.jpg',
+      path: '/bathrooms',
     },
     {
       id: 5,
       title: 'Light Fixtures',
       image: '/KZDesign/galleryCovers/lights5.jpg',
+      path: '/light-fixtures',
     },
     {
       id: 6,
       title: 'Seasonal',
       image: '/KZDesign/galleryCovers/seasonal6.jpg',
+      path: '/seasonal',
     },
   ]
+
+  const handleCardClick = (path: string) => {
+    navigate(path)
+  }
 
   return (
     <Container maxW="container.xl" py={16}>
@@ -61,6 +74,8 @@ const Portfolio = () => {
               transition="transform 0.2s"
               _hover={{ transform: 'scale(1.02)' }}
               color="brand.950"
+              cursor="pointer"
+              onClick={() => handleCardClick(project.path)}
             >
               <Image
                 src={project.image}
