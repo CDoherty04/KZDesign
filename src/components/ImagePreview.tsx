@@ -5,7 +5,6 @@ import {
   ModalBody,
   ModalCloseButton,
   Image,
-  useDisclosure,
 } from '@chakra-ui/react'
 
 interface ImagePreviewProps {
