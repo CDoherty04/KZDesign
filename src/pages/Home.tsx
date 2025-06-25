@@ -15,20 +15,20 @@ const Home = () => {
   const projects = [
     {
       id: 1,
-      title: 'Modern Farmhouse Living Room',
-      description: 'A perfect blend of rustic charm and contemporary comfort',
-      image: '/KZDesign/frontpage/front1.jpg',
-    },
-    {
-      id: 2,
-      title: 'Coastal Kitchen Renovation',
-      description: 'Light-filled space with natural materials and ocean-inspired accents',
+      title: 'Modern Bedroom Suite',
+      description: 'A teenager\'s dream bedroom with a crisp modern feel',
       image: '/KZDesign/frontpage/front2.jpg',
     },
     {
+      id: 2,
+      title: 'Coastal Bedroom',
+      description: 'Light-filled space with natural materials and ocean-inspired accents',
+      image: '/KZDesign/frontpage/front1.jpg',
+    },
+    {
       id: 3,
-      title: 'Mountain Retreat Master Suite',
-      description: 'Serene bedroom sanctuary with panoramic views',
+      title: 'Luxury Reading Nook',
+      description: 'Serene lounge space with luxury seating, perfect for relaxation',
       image: '/KZDesign/frontpage/front3.jpg',
     },
   ]
