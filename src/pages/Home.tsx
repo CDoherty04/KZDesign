@@ -8,10 +8,16 @@ import {
   VStack,
   Button,
   AspectRatio,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
+import { useState } from 'react'
+import ImagePreview from '../components/ImagePreview'
 
 const Home = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null)
+
   const projects = [
     {
       id: 1,
@@ -32,6 +38,11 @@ const Home = () => {
       image: '/KZDesign/frontpage/front3.jpg',
     },
   ]
+
+  const handleImageClick = (imageSrc: string, imageAlt: string) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt })
+    onOpen()
+  }
 
   return (
     <Box w="full">
@@ -128,6 +139,8 @@ const Home = () => {
                       src={project.image}
                       alt={project.title}
                       objectFit="cover"
+                      cursor="pointer"
+                      onClick={() => handleImageClick(project.image, project.title)}
                     />
                   </AspectRatio>
                   <VStack p={6} align="start" spacing={3}>
@@ -164,6 +177,15 @@ const Home = () => {
           </VStack>
         </Container>
       </Box>
+
+      {selectedImage && (
+        <ImagePreview
+          isOpen={isOpen}
+          onClose={onClose}
+          imageSrc={selectedImage.src}
+          imageAlt={selectedImage.alt}
+        />
+      )}
     </Box>
   )
 }

@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  VStack,
-  Heading,
-  SimpleGrid,
-  Image,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import GalleryPage from '../components/GalleryPage'
 
 const LightFixtures = () => {
   const lightFixtures = [
@@ -25,37 +17,7 @@ const LightFixtures = () => {
     { id: 13, image: '/KZDesign/lights/Light13.jpg', alt: 'Light Fixture 13' },
   ]
 
-  return (
-    <Container maxW="container.xl" py={16}>
-      <VStack spacing={12}>
-        <Heading as="h1" size="2xl" textAlign="center" color="brand.950">
-          Light Fixtures
-        </Heading>
-        
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
-          {lightFixtures.map((fixture) => (
-            <Box
-              key={fixture.id}
-              bg={useColorModeValue('white', 'gray.800')}
-              borderRadius="lg"
-              overflow="hidden"
-              boxShadow="md"
-              transition="transform 0.2s"
-              _hover={{ transform: 'scale(1.02)' }}
-            >
-              <Image
-                src={fixture.image}
-                alt={fixture.alt}
-                width="100%"
-                height="300px"
-                objectFit="cover"
-              />
-            </Box>
-          ))}
-        </SimpleGrid>
-      </VStack>
-    </Container>
-  )
+  return <GalleryPage title="Light Fixtures" items={lightFixtures} />
 }
 
 export default LightFixtures 

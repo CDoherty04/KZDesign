@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  VStack,
-  Heading,
-  SimpleGrid,
-  Image,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import GalleryPage from '../components/GalleryPage'
 
 const Bathrooms = () => {
   const bathrooms = [
@@ -19,37 +11,7 @@ const Bathrooms = () => {
     { id: 7, image: '/KZDesign/kitchenBath/kb7.jpg', alt: 'Kitchen & Bathroom 7' },
   ]
 
-  return (
-    <Container maxW="container.xl" py={16}>
-      <VStack spacing={12}>
-        <Heading as="h1" size="2xl" textAlign="center" color="brand.950">
-          Bathrooms
-        </Heading>
-        
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
-          {bathrooms.map((bathroom) => (
-            <Box
-              key={bathroom.id}
-              bg={useColorModeValue('white', 'gray.800')}
-              borderRadius="lg"
-              overflow="hidden"
-              boxShadow="md"
-              transition="transform 0.2s"
-              _hover={{ transform: 'scale(1.02)' }}
-            >
-              <Image
-                src={bathroom.image}
-                alt={bathroom.alt}
-                width="100%"
-                height="300px"
-                objectFit="cover"
-              />
-            </Box>
-          ))}
-        </SimpleGrid>
-      </VStack>
-    </Container>
-  )
+  return <GalleryPage title="Kitchen & Bathroom" items={bathrooms} />
 }
 
 export default Bathrooms 
