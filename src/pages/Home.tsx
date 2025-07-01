@@ -133,6 +133,7 @@ const Home = () => {
                   _hover={{ transform: "scale(1.02)" }}
                   border="1px"
                   borderColor="brand.100"
+                  textAlign="center"
                 >
                   <AspectRatio ratio={4/3}>
                     <Image
@@ -143,7 +144,7 @@ const Home = () => {
                       onClick={() => handleImageClick(project.image, project.title)}
                     />
                   </AspectRatio>
-                  <VStack p={6} align="start" spacing={3}>
+                  <VStack p={6} spacing={3}>
                     <Heading
                       as="h3"
                       size={{ base: "sm", md: "md", lg: "lg" }}

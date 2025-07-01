@@ -40,9 +40,9 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Light Fixtures',
-      image: '/galleryCovers/lights5.jpg',
-      path: '/portfolio/light-fixtures',
+      title: 'Lights & Accessories',
+      image: '/galleryCovers/lightsAccessories5.jpg',
+      path: '/portfolio/lights-accessories',
     },
     {
       id: 6,
