@@ -17,37 +17,37 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Rooms',
-      image: '/KZDesign/galleryCovers/rooms1.png',
+      image: '/galleryCovers/rooms1.png',
       path: '/portfolio/rooms',
     },
     {
       id: 2,
       title: 'Before & After',
-      image: '/KZDesign/galleryCovers/ba2.jpg',
+      image: '/galleryCovers/ba2.jpg',
       path: '/portfolio/before-after',
     },
     {
       id: 3,
       title: 'Mood Boards',
-      image: '/KZDesign/galleryCovers/mood3.png',
+      image: '/galleryCovers/mood3.png',
       path: '/portfolio/mood-boards',
     },
     {
       id: 4,
       title: 'Kitchen & Bathroom',
-      image: '/KZDesign/galleryCovers/kitchenBath4.jpg',
+      image: '/galleryCovers/kitchenBath4.jpg',
       path: '/portfolio/bathrooms',
     },
     {
       id: 5,
       title: 'Light Fixtures',
-      image: '/KZDesign/galleryCovers/lights5.jpg',
+      image: '/galleryCovers/lights5.jpg',
       path: '/portfolio/light-fixtures',
     },
     {
       id: 6,
       title: 'Seasonal',
-      image: '/KZDesign/galleryCovers/seasonal6.jpg',
+      image: '/galleryCovers/seasonal6.jpg',
       path: '/portfolio/seasonal',
     },
   ]

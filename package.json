@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://cdoherty04.github.io/KZDesign/#",
+  "homepage": "/",
   "scripts": {
     "start": "vite",
     "build": "tsc -b && vite build",

@@ -23,19 +23,19 @@ const Home = () => {
       id: 1,
       title: 'Modern Bedroom Suite',
       description: 'A teenager\'s dream bedroom with a crisp modern feel',
-      image: '/KZDesign/frontpage/front1.jpg',
+      image: '/frontpage/front1.jpg',
     },
     {
       id: 2,
       title: 'Coastal Bedroom',
       description: 'Light-filled space with natural materials and ocean-inspired accents',
-      image: '/KZDesign/frontpage/front2.jpg',
+      image: '/frontpage/front2.jpg',
     },
     {
       id: 3,
       title: 'Luxury Reading Nook',
       description: 'Serene lounge space with luxury seating, perfect for relaxation',
-      image: '/KZDesign/frontpage/front3.jpg',
+      image: '/frontpage/front3.jpg',
     },
   ]
 
@@ -61,7 +61,7 @@ const Home = () => {
           left={0}
           right={0}
           bottom={0}
-          bgImage="url('/KZDesign/rooms/room5.png')"
+          bgImage="url('/rooms/room5.png')"
           bgSize="cover"
           bgPosition="center"
           opacity={0.1}

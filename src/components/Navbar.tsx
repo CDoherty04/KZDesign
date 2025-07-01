@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           <Flex alignItems="center" gap={4}>
             <Image
-              src="/KZDesign/logo.png"
+              src="/logo.png"
               alt="Kristen Doherty Design Logo"
               h="40px"
               w="auto"
