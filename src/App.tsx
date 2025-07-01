@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import ThankYou from './pages/ThankYou'
 import Rooms from './pages/Rooms'
 import BeforeAfter from './pages/BeforeAfter'
 import MoodBoards from './pages/MoodBoards'
@@ -29,6 +30,7 @@ function App() {
               <Route path="/portfolio/light-fixtures" element={<LightFixtures />} />
               <Route path="/portfolio/seasonal" element={<Seasonal />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
           </Box>
         </Box>
